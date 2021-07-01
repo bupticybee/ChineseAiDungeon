@@ -15,9 +15,28 @@ class Story():
         outstr += "\n<end>"
         return outstr
     
+    def to_dungeon_format(self):
+        outstr = f"{self.background}"
+        for one_action,one_action_type,one_result,one_summary in self.story:
+            if one_action_type == "做":
+                outstr += f"\n> 你{one_action}\n{one_result}"
+            elif one_action_type == "说":
+                outstr += f"\n> 你说“{one_action}”\n{one_result}"
+        return outstr
+    
+    def to_normal_format(self):
+        outstr = f"{self.background}"
+        for one_action,one_action_type,one_result,one_summary in self.story:
+            if one_action_type == "做":
+                outstr += f"\n你{one_action}\n{one_result}"
+            elif one_action_type == "说":
+                outstr += f"\n你说“{one_action}”\n{one_result}"
+        return outstr
+    
     def from_file(self,fname):
         with open(fname,'r') as fhdl:
             self.load_content(fhdl)
+        return self
     
     def load_content(self,content):
         self.story = []
