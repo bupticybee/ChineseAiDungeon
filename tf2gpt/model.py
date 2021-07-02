@@ -312,3 +312,18 @@ class GPT(tf.keras.Model):
         }
         ret['loss'] = loss
         return ret
+    
+    def eval_step(self, data):
+        x, y = data
+        logits = self.call(x)
+        loss = tf.keras.backend.sparse_categorical_crossentropy(
+            target=y, output=logits, from_logits=True
+        )
+        loss = tf.boolean_mask(loss, x > 0)
+        # token average
+        loss = tf.reduce_mean(loss)
+        ret = {
+        }
+        ret['loss'] = loss
+        return ret
+
