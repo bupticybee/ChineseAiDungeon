@@ -140,7 +140,7 @@ class Attention(tf.keras.layers.Layer):
         attn = tf.multiply(attn, 1.0 / math.sqrt(float(self.size_per_head)))
 
         # [L, S]
-        if hasattr(seq_len, "name"):
+        if hasattr(seq_len, "name") and self.train_size is not None:
             attention_mask = get_attention_mask(self.train_size)
         else:
             attention_mask = get_attention_mask(seq_len)
