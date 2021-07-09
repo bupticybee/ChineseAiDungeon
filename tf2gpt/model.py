@@ -285,15 +285,16 @@ class GPT(tf.keras.Model):
             return x, tf.stack(cached_kvs)
         return x
 
-    def train_step(self, data):
+    def train_step(self, data,mask=None):
         x, y = data
         with tf.GradientTape() as tape:
             logits = self.call(x)
             loss = tf.keras.backend.sparse_categorical_crossentropy(
                 target=y, output=logits, from_logits=True
             )
-            loss = tf.boolean_mask(loss, x > 0)
-            # token average
+            if mask is not None:
+                loss = tf.boolean_mask(loss, mask)
+            
             loss = tf.reduce_mean(loss)
         gradients = tape.gradient(loss, self.trainable_variables)
         if self.optimizer._name == 'AdamW':
@@ -313,14 +314,15 @@ class GPT(tf.keras.Model):
         ret['loss'] = loss
         return ret
     
-    def eval_step(self, data):
+    def eval_step(self, data,mask=None):
         x, y = data
         logits = self.call(x)
         loss = tf.keras.backend.sparse_categorical_crossentropy(
             target=y, output=logits, from_logits=True
         )
-        loss = tf.boolean_mask(loss, x > 0)
-        # token average
+        #loss = tf.boolean_mask(loss, x > 0)
+        if mask is not None:
+            loss = tf.boolean_mask(loss, mask)
         loss = tf.reduce_mean(loss)
         ret = {
         }
