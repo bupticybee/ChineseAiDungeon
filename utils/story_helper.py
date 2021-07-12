@@ -68,7 +68,7 @@ class Story():
             if(self.response_quality_ok(response) == True):
                 break
             else:
-                print_warp("response quality check failed,generating another one")
+                print_warp("Response quality check failed,generating another")
         
         #responsesp = response.split("。")
         #if(len(responsesp) > 2):
