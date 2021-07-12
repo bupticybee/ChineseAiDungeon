@@ -8,6 +8,7 @@ from utils.story_util import Story,Stories
 from utils.progress_bar import ProgressBar
 from tensorflow.keras.utils import multi_gpu_model
 import random
+import textwrap
 from utils.gpt2_tokenizer import GPT2Tokenizer
 import tensorflow_hub as hub
 cbpe = GPT2Tokenizer(
@@ -16,6 +17,10 @@ cbpe = GPT2Tokenizer(
     model_file='CPM-Generate/bpe_3w_new/chinese_vocab.model')
 
 gpt = None
+
+def print_warp(instr):
+    for i in textwrap.wrap(instr,width=50):
+        print(i)
 
 def initize(model_path="./tmp_weight"):
     global gpt
@@ -63,7 +68,7 @@ class Story():
             if(self.response_quality_ok(response) == True):
                 break
             else:
-                print("response quality check failed,generating another one")
+                print_warp("response quality check failed,generating another one")
         
         #responsesp = response.split("。")
         #if(len(responsesp) > 2):
@@ -76,8 +81,8 @@ class Story():
         self.story.append(response)
         
     def interactive(self):
-        print("\n".join(self.story))
+        print_warp("\n".join(self.story))
         while True:
             action = input("> 你")
             self.action(action)
-            print(self.story[-1])
+            print_warp(self.story[-1])
