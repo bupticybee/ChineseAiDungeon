@@ -1,0 +1,5 @@
+sentencepiece==0.1.96
+jieba==0.42.1
+regex==2020.1.8
+tensorflow-gpu==2.3.0
+tensorflow-hub==0.12.0
