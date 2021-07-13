@@ -97,7 +97,7 @@
 
 ## 数据收集计划
 
-当前影响模型效果的首要因素是数据质量，目前的数据来源是经过google翻译的 [choose your story](http://chooseyourstory.com/) 的数据,由于经过翻译，数据有诸多的质量问题。我无法找到中文版本的类似数据，如果你有，可以将数据来源或格式化的数据发送给我的邮箱 icybee@yeah.net， 或者通过pull request提交给我。
+当前影响模型效果的首要因素是数据质量，目前的数据来源是经过google翻译的 [choose your story](http://chooseyourstory.com/) 的数据,由于经过翻译，数据有诸多的质量问题。我无法找到中文版本的类似数据，如果你有，可以将数据来源或格式化的数据发送给我的邮箱 icybee@yeah.net， 或者通过issue提交给我。
 
 目前项目使用的数据格式示例（json）:
 
@@ -124,4 +124,4 @@
 
 一个完整的训练使用的json文件： [truncated_advanture_train.json](labeled_data/advanture_translated/truncated_advanture_train.json)
 
-或者你可以通过```标注.ipynb```中的标注工具在jupyter notebook中标注一些数据，同样发送到我的邮箱/pull request。各位的支持将会使项目越来越好。
+或者你可以通过```标注.ipynb```中的标注工具在jupyter notebook中标注一些数据，同样发送到我的邮箱/项目issue。各位的支持将会使项目越来越好。
