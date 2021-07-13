@@ -47,17 +47,6 @@
 - 如果模型输出的结果没对你的动作做出合理反应，或者一直重复某个事实，尝试忽略模型的重复，直接输入更加具体的你的动作，多几次总会走出来
 - 麻烦忽略模型输出中的一些逻辑问题，记住大体故事走向就好，这对游戏体验有好处（哈哈）
 
-## 模型
-
-| 模型             | 文件大小 | 百度网盘地址                                                  | google drive地址                                                                     | 备注                                           | 对应代码commit id                                                                                             |
-|----------------|------|---------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| storyTeller1.1 | 4.8G | https://pan.baidu.com/s/1OiRbMydElmISFtRW3k0y5Q 提取码awb7 | https://drive.google.com/file/d/1cJ1kvtPrV4TXxiadiGU6bJUAy11bRDm1/view?usp=sharing | 2.6B-fp16,使用经过翻译的chooseYourStory语料训练,模型略微过拟合 | [aecbc72](https://github.com/bupticybee/ChineseAiDungeon/commit/aecbc72205161131568238091ee25f79a33eafea) |
-
-
-## 自己finetune模型
-
-遵循 ```finetune.ipynb```文件中的步骤开始finetune，需要1张至少16GB显存的显卡。由于我的硬件限制，我只finetune了清源CPM的2.6B的fp16模型，并没有使用fp32的模型。我本人finetune后的模型地址在[这里](https://drive.google.com/file/d/1cJ1kvtPrV4TXxiadiGU6bJUAy11bRDm1).
-
 ## 游玩demo
 
 下面是我自己游玩ChineseAiDungeon产生的第一段故事，文段没有经过筛选
@@ -94,6 +83,19 @@
 现在你可以看到你想知道的,这个女人看起来有些惊恐,但你仍然坚持她的想法,并继续走。你会发现她真的很美,但你不知道为什么。她似乎在注意她,当你走到她面前时,她抬起头看向你,然后看向你身后。你继续走着,直到看到一个身穿黑色斗篷的男人从她身边走开,她的目光仍然停留在她身上。“你可以告诉我你在哪里看到的,”她问。
 > 你
 ```
+
+
+## 模型
+
+| 模型             | 文件大小 | 百度网盘地址                                                  | google drive地址                                                                     | 备注                                           | 对应代码commit id                                                                                             |
+|----------------|------|---------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| storyTeller1.1 | 4.8G | https://pan.baidu.com/s/1OiRbMydElmISFtRW3k0y5Q 提取码awb7 | https://drive.google.com/file/d/1cJ1kvtPrV4TXxiadiGU6bJUAy11bRDm1/view?usp=sharing | 2.6B-fp16,使用经过翻译的chooseYourStory语料训练,模型略微过拟合 | [aecbc72](https://github.com/bupticybee/ChineseAiDungeon/commit/aecbc72205161131568238091ee25f79a33eafea) |
+
+
+## 自己finetune模型
+
+遵循 ```finetune.ipynb```文件中的步骤开始finetune，需要1张至少16GB显存的显卡。由于我的硬件限制，我只finetune了清源CPM的2.6B的fp16模型，并没有使用fp32的模型。我本人finetune后的模型地址在[这里](https://drive.google.com/file/d/1cJ1kvtPrV4TXxiadiGU6bJUAy11bRDm1).
+
 
 ## 数据收集计划
 
