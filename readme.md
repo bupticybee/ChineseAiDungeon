@@ -36,6 +36,8 @@
 ## 如何开始游戏
 你可以选择直接在colab上[体验](https://colab.research.google.com/github/bupticybee/ChineseAiDungeon/blob/main/ChineseAiDungeonColabDemo.ipynb)  ，或者也可以将代码clone到本地，运行ChineseAiDungeonColabDemo.ipynb 文件进行游戏。
 
+如果你选择在本地运行游戏，需要将 storyTeller1.1 模型预先下载好并且解压到工程根目录。
+
 ## 开始游戏前须知
 - 游戏可以运行在cpu或者gpu上，但是cpu上的模型推断会非常漫长，不建议！
 - 需要8GB以上的显存运行本程序
