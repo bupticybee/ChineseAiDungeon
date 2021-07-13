@@ -43,7 +43,7 @@ o88o     o8888o o888o o888bood8P'    `V88V"V8P' o888o o888o `8oooooo.  `Y8bod8P'
 
 | 模型         | 文件大小 | 百度网盘地址                                         | google drive地址                                                                 | 备注                                          |
 | -------------- | -------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------- |
-| storyTeller1.1 | 4.8G     | https://pan.baidu.com/s/1OiRbMydElmISFtRW3k0y5Q 提取码awb7 | https://drive.google.com/file/d/1cJ1kvtPrV4TXxiadiGU6bJUAy11bRDm1/view?usp=sharing | 2.6B-fp16,使用经过翻译的chooseYourStory语料训练 |
+| storyTeller1.1 | 4.8G     | https://pan.baidu.com/s/1OiRbMydElmISFtRW3k0y5Q 提取码awb7 | https://drive.google.com/file/d/1cJ1kvtPrV4TXxiadiGU6bJUAy11bRDm1/view?usp=sharing | 2.6B-fp16,使用经过翻译的chooseYourStory语料训练,模型略微过拟合，对应commitid aecbc72205161131568238091ee25f79a33eafea |
 
 ## 自己finetune模型
 
