@@ -132,3 +132,7 @@
 一个完整的训练使用的json文件： [truncated_advanture_train.json](labeled_data/advanture_translated/truncated_advanture_train.json)
 
 或者你可以通过```标注.ipynb```中的标注工具在jupyter notebook中标注一些数据，同样发送到我的邮箱/项目issue。各位的支持将会使项目越来越好。
+
+## 寻求帮助
+
+正如你所见，ChineseAiDungeon生成故事的质量并不优秀，也许一些算法或是数据上的改进可以让故事的质量更好，如果你对这方面有想法，欢迎给本项目提issue/pull request，或是联系我 icybee@yeah.net
