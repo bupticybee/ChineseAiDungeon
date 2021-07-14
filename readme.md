@@ -43,8 +43,6 @@
 
 下面是我自己游玩ChineseAiDungeon产生的第一段故事(对应模型 storyTeller1.1)，文段没有经过筛选
 
-经过几次模型和算法更迭，现在效果已经更好，但是由于下面故事是模型产生的第一段故事（考虑到其纪念意义），我还是选择把它放在项目首页
-
 ```
 你在树林里冒险，指不定会从哪里蹦出来一些奇怪的东西，你握紧手上的手枪，希望这次冒险能够找到一些值钱的东西
 > 你 往树林深处走去
@@ -95,8 +93,8 @@
 
 | 模型             | 文件大小 | 百度网盘地址                                                  | google drive地址                                                                     | 备注                                           | 对应代码commit id                                                                                             |
 |----------------|------|---------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| storyTeller1.2 | 4.8G |  https://pan.baidu.com/s/13CDBkxr-N80aqfbyH_IMWg 提取码d3cf | https://drive.google.com/file/d/17eigrQuJBkNQsqZdib8K6bcQeaTNwsVz | 2.6B-fp16,使用经过翻译的chooseYourStory语料训练,模型略微欠拟合，12epoch | [aecbc72](https://github.com/bupticybee/ChineseAiDungeon/commit/aecbc72205161131568238091ee25f79a33eafea) |
 | storyTeller1.1 | 4.8G | https://pan.baidu.com/s/1OiRbMydElmISFtRW3k0y5Q 提取码awb7 | https://drive.google.com/file/d/1cJ1kvtPrV4TXxiadiGU6bJUAy11bRDm1/view?usp=sharing | 2.6B-fp16,使用经过翻译的chooseYourStory语料训练,模型略微过拟合，48epoch | [aecbc72](https://github.com/bupticybee/ChineseAiDungeon/commit/aecbc72205161131568238091ee25f79a33eafea) |
+| storyTeller1.2 | 4.8G |  https://pan.baidu.com/s/13CDBkxr-N80aqfbyH_IMWg 提取码d3cf | https://drive.google.com/file/d/17eigrQuJBkNQsqZdib8K6bcQeaTNwsVz | 2.6B-fp16,使用经过翻译的chooseYourStory语料训练,模型略微欠拟合，12epoch | [aecbc72](https://github.com/bupticybee/ChineseAiDungeon/commit/aecbc72205161131568238091ee25f79a33eafea) |
 
 
 ## 自己finetune模型
