@@ -58,7 +58,7 @@ class Story():
     
     def action(self,action):
         action_str = "> 你" + action
-        q = "".join(self.story[-self.context_len:]) + "\n" + action_str + "\n"
+        q = "".join(self.story[-self.context_len:]).replace("\n",'') + "\n" + action_str + "\n"
         q = q[-600:]
         self.story.append("你" + action)
         response = ""
