@@ -34,8 +34,10 @@
 
 ![](imgs/demo.gif)
 
+通过这篇文章 [制作一个中文版AI地牢](https://zhuanlan.zhihu.com/p/389921225) 了解中文版本的ai地牢的创造过程。
+
 ## 如何开始游戏
-你可以选择直接在colab上[体验](https://colab.research.google.com/github/bupticybee/ChineseAiDungeon/blob/main/ChineseAiDungeonColabDemo.ipynb)  ，或者也可以将代码clone到本地，运行ChineseAiDungeonColabDemo.ipynb 文件进行游戏。
+如果你有VPN，你可以选择直接在colab上[体验](https://colab.research.google.com/github/bupticybee/ChineseAiDungeon/blob/main/ChineseAiDungeonColabDemo.ipynb)  ，或者也可以将代码clone到本地，运行ChineseAiDungeonColabDemo.ipynb 文件进行游戏。
 
 如果你选择在本地运行游戏，需要将 storyTeller1.1 模型预先下载好并且解压到工程根目录。
 
