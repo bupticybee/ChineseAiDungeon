@@ -28,6 +28,8 @@
 
 # ChineseAiDungeon
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bupticybee/ChineseAiDungeon/blob/main/ChineseAiDungeonColabDemo.ipynb)
+
 中文版本的ai地牢，一个使用GPT-2的文字冒险游戏，使用清源CPM预训练模型finetune而成。 
 
 点击 [这里](https://colab.research.google.com/github/bupticybee/ChineseAiDungeon/blob/main/ChineseAiDungeonColabDemo.ipynb) 赶快在 google colab 上体验吧！
